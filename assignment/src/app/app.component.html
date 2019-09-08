@@ -1,0 +1,11 @@
+<div class="container">
+  <app-game-control (startGame)="onGameStarted($event)"
+  (stopGame)="onGameStopped($event)"
+  ></app-game-control>
+
+  <div class="panel-body" *ngFor="let i of counter">
+    
+<strong *ngIf="i%2===0">Even number</strong>
+<em *ngIf="i%2===1">Odd number</em>
+  </div>
+</div>
